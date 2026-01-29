@@ -4,23 +4,7 @@
 require 'pathname'
 
 class GemVerifier
-  REQUIRED_FILES = [
-    'flash_messages.gemspec',
-    'lib/flash_messages.rb',
-    'lib/flash_messages/version.rb',
-    'lib/flash_messages/engine.rb',
-    'lib/flash_messages/controller_helpers.rb',
-    'lib/flash_messages/view_helper.rb',
-    'lib/flash_messages/generators/flash_messages/install_generator.rb',
-    'app/views/flash_messages/_flash.html.erb',
-    'app/views/flash_messages/_flash_message.html.erb',
-    'app/assets/javascripts/flash_messages/controllers/flash_controller.js',
-    'README.md',
-    'CHANGELOG.md',
-    'MIT-LICENSE',
-    'Rakefile',
-    'Gemfile'
-  ]
+  REQUIRED_FILES = %w[flash_messages.gemspec lib/flash_messages.rb lib/flash_messages/version.rb lib/flash_messages/engine.rb lib/flash_messages/controller_helpers.rb lib/flash_messages/view_helper.rb lib/flash_messages/generators/flash_messages/install_generator.rb app/views/flash_messages/_flash.html.erb app/views/flash_messages/_flash_message.html.erb app/assets/javascripts/flash_messages/controllers/flash_controller.js README.md CHANGELOG.md MIT-LICENSE Rakefile Gemfile]
   
   COLORS = {
     green: "\e[32m",
